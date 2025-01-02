@@ -1,10 +1,12 @@
 #!/bin/bash
+set -e
 FOLDER_SET=false
+CONDA_FOLDER="$HOME/miniconda3/bin/activate"
 
 echo "*** Creating Pylops Conda Environment ***"
 conda env create -f environment-dev.yml
 echo "*** Activating Pylops Conda Environment ***"
-conda activate pylops #NOT WORKING PROPERLY!!!!
+source $CONDA_FOLDER pylops
 echo "*** Installing Pylops ***"
 pip install -e .
 
