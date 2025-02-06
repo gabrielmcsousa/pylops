@@ -62,4 +62,4 @@ echo "*** Installing Devito ***"
 pip install -e .
 
 echo "*** Fixing Incompatible Libraries ***"
-pip install flake8==7.1.1 numba==0.60.0 numpy==1.26.4 numpydoc==1.7.0 scipy==1.14.1 sympy==1.13.3
+pip install flake8==7.1.1 numba==0.60.0 numpy==1.26.4 numpydoc==1.7.0 scipy==1.14.1 sympy==1.13.3 mpi4py==3.1.6
